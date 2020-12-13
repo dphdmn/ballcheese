@@ -1,3 +1,4 @@
+let cheesConst = 69;
 let bps;
 let outlierconst = 0.07;
 let newr = []
@@ -14,7 +15,7 @@ let reactionHS = 9999;
 let bpsHS = 0;
 let eatenHS = 0;
 let maxepsHS = 0;
-let PRESSURE = 60;
+let PRESSURE = 169;
 let ballcounter;
 let timedif = 0;
 let reactions = [];
@@ -33,7 +34,7 @@ let xpos = H/2;
 let ypos = W/2;
 let scorePressure = 1;
 let newdist = 0;
-let scorePrise = 35;
+let scorePrise = 69;
 let highScore = 0;
 let eps = 0;
 let ingame = true;
@@ -398,7 +399,7 @@ function textThings()
    fill(0,255,230, alpha);
    textSize(30);
    textStyle(BOLD);
-   text("BallSheet by dphdmn",W/2,H-H/12);
+   text("BallCheese by dphdmn",W/2,H-H/12);
    textSize(25);
    fill(250,150,200, alpha);
    text("v6.9 Easy",W/2,H-H/25);
@@ -492,9 +493,9 @@ function checkCollision()
     reactions.push(r);
      
     let cost = scorePrise;
-     if (r < 100)
+     if (r < cheesConst)
      {
-       cost = cost * (r/100);
+       cost = cost * (r/cheesConst);
      }
     ballcounter++;
     score+= cost;
